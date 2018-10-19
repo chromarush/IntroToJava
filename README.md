@@ -62,4 +62,46 @@ For example, 15 % 6 will return the value of 3, because that is the remainder le
 - !=: not equal to.
 
 
+### Control flow
+Programs can follow different sets of instructions depending on the values that we provide to them. 
 
+### Boolean Operators: && || !
+- The and operator is represented in Java by &&.
+- It returns a boolean value of true only when the expressions on both sides of && are true.
+- The or operator is represented in Java by ||.
+- It returns a Boolean value of true when at least one expression on either side of || is true.
+The not operator is represented in Java by !.
+- It will return the opposite of the expression immediately after it. It will return false if the expression is true, and true if the expression is false.
+
+
+
+The precedence of each Boolean operator is as follows:
+
+1. ! is evaluated first
+2. && is evaluated second
+3. || is evaluated third
+
+### Looping Constructs
+1. while
+```
+public class booleanpractice{
+	
+	public static void main(String[] args) {
+		int x = 1;
+		System.out.println("Before the loop");
+		while (x <= 10) {
+			System.out.println("in the loop");
+			System.out.println("The value of x is " + x);
+			x = x + 1;
+		}
+		System.out.println("Thid is after the loop");
+		
+	}
+}
+```
+2. do-while
+3.  for
+
+###System.out.print vs. System.out.println
+- System.out.print = print the same line
+- System.out.println = prints a new line
