@@ -102,6 +102,79 @@ public class booleanpractice{
 2. do-while
 3.  for
 
+### if/else if/else
+```
+int shoeSize = 10;
+
+if (shoeSize > 12) {
+    System.out.println("Sorry, your shoe size is currently not in stock.");
+} else if (shoeSize >= 6) {
+    System.out.println("Your shoe size is in stock!");
+} else {
+    System.out.println("Sorry, this store does not carry shoes smaller than a size 6.");
+}
+```
+
 ###System.out.print vs. System.out.println
 - System.out.print = print the same line
 - System.out.println = prints a new line
+
+### Ternary conditional statement
+Java provides a shortcut that allows you to write if/else statements in a single line of code when you want to return a value for a boolean expression. 
+
+Ternary comes from a Latin word that means "composed of three parts".
+1. A Boolean expression
+2. A single statement that gets executed if the Boolean expression is true
+3. A single statement that gets executed if the Boolean expression is false
+
+```
+int pointsScored = 21;
+
+char gameResult = (pointsScored > 20) ? 'W' : 'L';
+System.out.println(gameResult);
+```
+
+###Switch Statement
+```
+int restaurantRating = 3;
+
+switch (restaurantRating) {
+
+    case 1: System.out.println("This restaurant is not my favorite.");
+      break;
+
+    case 2: System.out.println("This restaurant is good.");
+      break;
+
+    case 3: System.out.println("This restaurant is fantastic!");
+      break;
+
+    default: System.out.println("I've never dined at this restaurant.");
+      break;
+}
+```
+
+### For loop
+
+
+```
+for (initialization condition; testing condition; increment/decrement)
+{
+    statement(s)
+}
+```
+
+```
+
+// Java program to illustrate for loop. 
+class forLoopDemo 
+{ 
+    public static void main(String args[]) 
+    { 
+        // for loop begins when x=2 
+        // and runs till x <=4 
+        for (int x = 2; x <= 4; x++) 
+            System.out.println("Value of x:" + x); 
+    } 
+} 
+```
