@@ -176,5 +176,54 @@ class forLoopDemo
         for (int x = 2; x <= 4; x++) 
             System.out.println("Value of x:" + x); 
     } 
-} 
 ```
+### Classes: Constructor Parameters
+You can think of parameters like options at an ice cream store. You can choose to order a traditional ice cream cone, but other times you may want to specify the size of the cone or the flavor of the ice cream.
+
+#### Object
+example 1
+```
+class Car {
+
+    int modelYear;
+
+    public Car(int year) {
+
+        modelYear = year;
+
+    }
+
+    public static void main(String[] args){
+
+        Car myFastCar = new Car(2007);
+
+    }
+}
+```
+
+example 2
+
+```
+class Dog {
+	int age;
+public Dog (int dogsAge) {
+  age = dogsAge;
+}
+
+public static void main(String[] args){
+  Dog spike = new Dog(10);
+}
+
+}
+```
+### Escape Sequences
+
+The following is a table of escape sequences to be used when printing in Java.
+These statements are embedded within a literal print remark (they go between the quotes):
+
+- ``\n`` 	New line	Moves to beginning of next line
+- ``\b``	 	Backspace	Backs up one character
+- ``\t``		Horizontal tab	Moves to next tab position. Tab spacing is every 8 columns starting with 1. (Columns 9, 17, 25, 33, 41, 49, 57, 65, 73 ...)
+- 	``\\``	Backslash	Displays an actual backslash
+- 	``\'	``	Single quote	Displays an actual single quote
+- ``\"``		Double quote	Displays an actual double quote
